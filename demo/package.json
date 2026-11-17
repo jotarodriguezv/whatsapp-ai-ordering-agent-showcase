@@ -1,0 +1,17 @@
+{
+  "name": "ordering-agent-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal CLI that reproduces the core pattern of the WhatsApp ordering agent: deterministic stage routing, tool calling, code-validated order data, in-memory session state.",
+  "type": "module",
+  "scripts": {
+    "demo": "node --env-file-if-exists=.env src/cli.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "openai": "^4.104.0"
+  }
+}
